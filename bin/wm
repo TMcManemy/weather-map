@@ -1,4 +1,14 @@
 #!/usr/bin/env node
 
 require = require('esm')(module);
-require('../src/cli.js').cli(process.argv);
+const { program } = require('commander');
+
+program
+.option('-c, --city <city>','city of which to check the current weather')
+.requiredOption('-k, --apiKey <api key>','api key to used to call OpenWeather APIs');
+
+program.parse();
+
+const options = program.opts();
+
+require('../src/cli.js').cli(options);
