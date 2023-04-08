@@ -9,4 +9,4 @@ From the project root directory, run `npm link`
 
 ## Sample Commands
 
-`wm`
+`wm <api key>`
