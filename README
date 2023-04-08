@@ -1,0 +1,12 @@
+## Built With
+
+node version 19.8.1
+npm version 9.5.1
+
+## Installation
+
+From the project root directory, run `npm link`
+
+## Sample Commands
+
+`wm`
