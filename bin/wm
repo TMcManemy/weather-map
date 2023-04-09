@@ -4,11 +4,19 @@ require = require('esm')(module);
 const { program } = require('commander');
 
 program
-.option('-c, --city <city>','city of which to check the current weather')
-.requiredOption('-k, --apiKey <api key>','api key to used to call OpenWeather APIs');
+	.option('-ci, --city <city>','city of which to check the current weather')
+	.option('-co, --coordinates [coordinates...]','coordinates (latitude and longitude) of which to check the current weather')
+	.option('-z, --zipcode <zip code>','zip code of which to check the current weather')
+	.requiredOption('-k, --apiKey <api key>','api key to used to call OpenWeather APIs');
 
 program.parse();
 
 const options = program.opts();
 
-require('../src/cli.js').cli(options);
+try {
+	require('../src/cli.js').cli(options);
+}
+catch (error) {
+	console.log(error.message);
+	program.help();
+}

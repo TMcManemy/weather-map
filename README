@@ -5,8 +5,20 @@ npm version 9.5.1
 
 ## Installation
 
-From the project root directory, run `npm link`
+From the project root directory, run:
+'npm install`
+`npm link`
 
 ## Sample Commands
 
-`wm <api key>`
+### Query by city name
+`wm -ci St.Louis -k <api key>`
+
+### Query by zip code
+`wm -z 63116 -k <api key>`
+
+### Query by coordinates
+`wm -co 38.6318657 --coordinates=-90.2428756 -k <api key>`
+
+### Returns
+`The current temperature in ${cityName} is ${temperatureInFahrenheit}`
