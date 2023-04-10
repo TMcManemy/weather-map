@@ -9,6 +9,11 @@ From the project root directory, run:
 'npm install`
 `npm link`
 
+## Running Tests
+
+From the project root directory, run:
+`npm test`
+
 ## Sample Commands
 
 ### Query by city name
