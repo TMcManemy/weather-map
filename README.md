@@ -22,7 +22,7 @@ From the project root directory, run:
 ### Query by zip code
 `wm -z 63116 -k <api key>`
 
-### Query by coordinates
+### Query by coordinates (latitude and longitude, respectively)
 `wm -co 38.6318657 --coordinates=-90.2428756 -k <api key>`
 
 ### Returns
