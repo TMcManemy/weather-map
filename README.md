@@ -6,8 +6,10 @@ npm version 9.5.1
 ## Installation
 
 From the project root directory, run:
-'npm install`
-`npm link`
+```
+npm install
+npm link
+```
 
 ## Running Tests
 
