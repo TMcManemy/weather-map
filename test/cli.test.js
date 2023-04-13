@@ -1,5 +1,4 @@
-require = require('esm')(module);
-const cli = require('../src/cli.js')
+const { cli } = require('../src/cli.js')
 
 describe('input validation', () => {
 	test('throws if args not provided', () => {

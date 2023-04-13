@@ -1,6 +1,6 @@
-const axios = require('axios/dist/node/axios.cjs');
+const axios = require('axios');
 
-export async function cli(args) {
+exports.cli = async (args) => {
 	validateArguments(args);
 
 	args = await setArguments(args);
